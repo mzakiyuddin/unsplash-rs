@@ -2,6 +2,9 @@ name: View and Download Photo
 
 on: push
 
+env:
+  RUST_LOG: info
+
 jobs:
   run:
     runs-on: ubuntu-22.04
@@ -12,4 +15,4 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run Code
-        run: RUST_LOG=info ./unsplash-rs
+        run: ./unsplash-rs
