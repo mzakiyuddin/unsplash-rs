@@ -1,6 +1,11 @@
 name: View and Download Photo
 
-on: push
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "*/45 * * * *"
 
 env:
   RUST_LOG: info
