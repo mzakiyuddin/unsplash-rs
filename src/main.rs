@@ -7,7 +7,7 @@ mod utils;
 async fn main() {
     env_logger::init();
 
-    const RANDOM_NUMBER: u16 = 200;
+    const RANDOM_NUMBER: u16 = 5;
 
     let list_all_photos = get_all_photos("zakiego").await;
     let list_download_link = create_download_link(&list_all_photos).await;
