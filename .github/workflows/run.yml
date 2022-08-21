@@ -1,0 +1,15 @@
+name: View and Download Photo
+
+on: push
+
+jobs:
+  cache-and-install:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Run Code
+        run: RUST_LOG=info ./unsplash-rs
