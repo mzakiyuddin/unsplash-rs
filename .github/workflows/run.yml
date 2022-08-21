@@ -3,8 +3,8 @@ name: View and Download Photo
 on: push
 
 jobs:
-  cache-and-install:
-    runs-on: ubuntu-latest
+  run:
+    runs-on: ubuntu-22.04
     timeout-minutes: 180
 
     steps:
