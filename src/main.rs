@@ -31,8 +31,8 @@ async fn launch(
         visit(&list_all_photos[i]).await.unwrap();
         visit(&list_download_link[i]).await.unwrap();
         info!(
-            "Downloading - image {}/{} - {}/{}",
-            i,
+            "Downloaded - image {}/{} - {}/{}",
+            i + 1,
             len,
             x + 1,
             random_number
