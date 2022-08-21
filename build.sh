@@ -2,6 +2,6 @@
 
 DIR="$(dirname "$0")"
 
-cargo build --release
+RUSTFLAGS='--cfg procmacro2_semver_exempt' cargo build --release
 
-cp "$DIR/target/release/unsplash-rs" "$DIR/unsplash-rs"
+cp "target/release/unsplash-rs" "unsplash-rs" 
